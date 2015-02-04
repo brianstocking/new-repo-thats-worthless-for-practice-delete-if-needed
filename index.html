@@ -7,6 +7,10 @@
 <body ng-controller="mainCtrl">
   <input ng-model="newFriend" />
   <button ng-click="addFriend()">Submit</button>
+  <input ng-model="oldFriend" />
+  <button ng-click="removeFriend()">Remove</button>
+  <button ng-click="clearFriends()">clear</button>
+
   <ul>
     <li ng-repeat="friend in friends">{{friend}} </li>
   </ul>
